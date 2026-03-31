@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email-mcp"
+version = "0.1.0"
+description = "MCP server for email via IMAP (read) and SMTP (send)"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.5.0",
+]

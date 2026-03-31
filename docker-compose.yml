@@ -1,0 +1,8 @@
+services:
+  email-mcp:
+    build: .
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+    restart: unless-stopped

@@ -6,7 +6,7 @@
 
 MCP server for email via IMAP (read) and SMTP (send). Built with [FastMCP](https://gofastmcp.com/).
 
-Works with any standard email provider: **Gmail**, **Outlook**, **Infomaniak**, **ProtonMail Bridge**, **self-hosted**, etc.
+Works with any standard email provider: **Gmail**, **Outlook**, **Infomaniak**, **ProtonMail** (via Bridge), **self-hosted**, etc.
 
 ## Tools
 
@@ -90,6 +90,8 @@ fastmcp run src/server.py:mcp --transport streamable-http --host 0.0.0.0 --port 
 | Yahoo | `imap.mail.yahoo.com` | `smtp.mail.yahoo.com` |
 
 > **Tip:** For Gmail, create an [App Password](https://myaccount.google.com/apppasswords) and use it as `EMAIL_PASSWORD`.
+
+> **ProtonMail:** Requires [Proton Mail Bridge](https://proton.me/mail/bridge) for IMAP (read). SMTP (send) also works natively via `smtp.protonmail.ch:587` with an [SMTP token](https://proton.me/support/smtp-submission) (paid plan + custom domain only).
 
 ## MCP Client Configuration
 
